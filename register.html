@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Личный кабинет | Регистрация</title>
     <link rel="stylesheet" href="CSS/register.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="photo/logo.ico" type="image/x-icon">
 </head>
 <body>
     
-    <header class="main-menu">
-        <div class="header-content">
-            <div class="nav-container">
-                <nav class="nav-left">
-                    <a href="rgutis.html">РГУТИС</a>
-                    <a href="teachers.html">Преподаватели</a>
-                    <a href="documents.html">Подать документы</a>
-                </nav>
-            </div>
-            <a href="index.html"><img src="photo/logo.png" alt="Логотип компании"></a>
-            <div class="nav-container">
-                <nav class="nav-right">
-                    <a href="index.html">Главная</a>
-                    <a href="contacts.html">Контакты</a>
-                    <a href="login.html">Личный кабинет</a>
-                </nav>
-            </div>
+    <section class="main-menu-nice">
+        <header class="main-menu">
+            <div class="header-content">
+                <div class="nav-container">
+                    <nav class="nav-left">
+                        <a href="rgutis.html">РГУТИС</a>
+                        <a href="professi.html">Профессии</a>
+                        <a href="documents.html">Подать документы</a>
+                    </nav>
+                </div>
 
-            <!-- ДОДЕЛАТЬ ВХОД | РЕГИСТРАЦИЯ И СМЕНИТЬ ВЕЗДЕ ШАПКИ!!!!! -->
-            <div class="login-mainheader">
-                <div class="login-header">
-                    <a class="login-header_1" href="login.html">Вход</a>
-                    <a href="register.html">Регистрация</a>
+                    <a href="index.html"><img src="photo/logo.png" alt="Логотип компании"></a>
+
+                <div class="nav-container">
+                    <nav class="nav-right">
+                        <a href="index.html">Главная</a>
+                        <a href="contacts.html">Контакты</a>
+                        <a href="login.html">Личный кабинет</a>
+                    </nav>
+                </div>
+
+                <!-- ДОДЕЛАТЬ ВХОД | РЕГИСТРАЦИЯ И СМЕНИТЬ ВЕЗДЕ ШАПКИ!!!!! -->
+                <div class="login-mainheader">
+                    <div class="login-header">
+                        <a class="login-header_1" href="login.html">Вход</a>
+                        <a href="register.html">Регистрация</a>
+                    </div>
                 </div>
             </div>
 
-        </div>
-    </header>
+        </header>   
+    </section>
 
     <main>
 
@@ -71,7 +75,7 @@
                         <div>
                             <label class="visually-hidden" for="password"></label>
                             <input type="password" id="password" class="password-input" placeholder="Повторите пароль">
-                            <button type="button" class="password-button">
+                            <button type="button" class="password-button_2">
                                 <span class="visually-hidden password-button__text">Показать</span>
                             </button>
                         </div>
@@ -92,6 +96,5 @@
         <p>© 2026 РГУТИС. Все права защищены.</p>
     </footer>
 
-<!-- <a id="umnico-widget-landing" href="https://umnico.com" target="_blank" rel="noopener" data-config="{&quot;urls&quot;:{&quot;vk&quot;:&quot;vk.com/rguts&quot;,&quot;max&quot;:&quot;max.ru/id5038005448_biz&quot;,&quot;telegram&quot;:&quot;t.me/krgutis&quot;},&quot;hideLogo&quot;:false}">Umnico</a> <script type="text/javascript"> window.umnicoWidgetLandingConfig = {"urls":{"vk":"vk.com/rguts","max":"max.ru/id5038005448_biz","telegram":"t.me/krgutis"},"hideLogo":false}; window.__UMNICO_WIDGET_LANDING_LOAD_NOW__ = true; var landingAnchor = document.getElementById('umnico-widget-landing'); if (landingAnchor && landingAnchor.tagName && landingAnchor.tagName.toLowerCase() === 'a') { var preventAnchorNavigation = function(event) { event.preventDefault(); }; landingAnchor.__umnicoWidgetInlineHandler = preventAnchorNavigation; landingAnchor.addEventListener('click', preventAnchorNavigation); } var x = document.createElement('script'); x.src = 'https://umnico.com/assets/widget-landing-loader.js'; x.type = 'text/javascript'; x.charset = 'UTF-8'; x.async = true; document.body.appendChild(x); </script> -->
 </body>
 </html>

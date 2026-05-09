@@ -27,14 +27,17 @@ body {
 
 
 /* Фиксированная шапка */
+.main-menu-nice {
+    display: flex;
+}
+
 .main-menu {
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     background-image: radial-gradient( #00c6ff,  #0072ff, #004e92);
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
     padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 1000; 
 
     /* ЧТО БЫ DIV НЕ ПРОВАЛИВАЛСЯ */
@@ -133,6 +136,8 @@ body {
     gap: 50px; /* Расстояние между ссылками */
 }
 
+
+/* ЦВЕТ НАВИГАЦИИ */
 .nav-left a,
 .nav-right a {
     text-decoration: none;
@@ -144,6 +149,7 @@ body {
     transition: transform 0.4s ease-out, color 0.4s ease-out;
     letter-spacing: 0.5px;
 }
+/* ЦВЕТ НАВИГАЦИИ */
 
 .nav-left a:hover,
 .nav-right a:hover {
@@ -270,10 +276,37 @@ main {
     display: inline-block; /* Чтобы фон адаптировался к контенту */
 }
 
+.button-rgutis {
+    display: flex;
+    justify-content: center;
+}
+
+.button-color {
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+
+    background-color: #1A1A1A;
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.button-color:hover {
+    transform: translateY(-8px);
+}
+
+.button-rgutis-link {
+    text-decoration: none;
+    color: #fff;
+}
+
 .hero-section h1 {
     font-size: clamp(2em, 2.5vw, 3.5em); /* Адаптивный размер шрифта */
     margin-bottom: 30px;
     color: #e0e0e0;
+    text-align: center;
     /* text-shadow: 0 0 15px rgba(3, 64, 179, 0); Некое свечение */
 }
 
@@ -289,9 +322,19 @@ main {
     margin-bottom: 0; /* Убираем нижний отступ у последнего параграфа */
 }
 
+.line-content_3 {
+    display: flex;
+    justify-content: center;
+}
 
+.block-line_3 {
+    border: none;
+    height: 6px;
 
-
+    margin-top: 2px;
+    width: 100%;
+    background: linear-gradient(#00c6ff, #004e92, transparent 70%);
+}
 
 /* ---- ДРУГИЕ СЕКЦИИ ---- */
 .content-section {
@@ -305,8 +348,8 @@ main {
 .content-section h1 {
     font-size: clamp(2em, 4vw, 3em);
     margin-bottom: 30px;
-    color: #00bcd4; /* Цвет заголовков других секций */
-    text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+    color: #fff; /* Цвет заголовков других секций */
+    /* text-shadow: 0 0 10px rgba(0, 188, 212, 0.5); */
 }
 
 .content-section p {
@@ -321,6 +364,7 @@ main {
 
 /* КАРТА С ПОЛОСКОЙ */
 .map {
+    /* margin-top: 150px; */
     background-color: #1A1A1A;
 }
 
@@ -328,28 +372,49 @@ main {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.8) contrast(1.2);
 }
 
+.block-line_2 {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
 .line {
     display: flex;
-    width: 70%;
-    height: 2px; /* Толщина центральной части */
-    background: linear-gradient(
-    to right,
-    transparent 0%,
-    #00c6ff 50%, 
-    #004e92 80%, 
-    transparent 100%);
+    width: 100%;
+    height: 6px; /* Толщина центральной части */
+    background: linear-gradient(#00c6ff, #004e92, transparent 70%);
     border: none;
     /* margin-bottom: 70px; */
-    margin-left: 18%;
-    margin-top: 220px;
+    /* margin-left: 18%; */
+    margin-top: 100px;
+    /* padding: 2px; */
+}
+
+.block-line {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: #1A1A1A;
+}
+
+.line-contacts {
+    display: flex;
+    width: 100%;
+    height: 6px; /* Толщина центральной части */
+    background: linear-gradient(#00c6ff, #004e92, transparent 70%);
+    border: none;
+    /* margin-bottom: 70px; */
+    /* margin-left: 18%; */
+    margin-top: 100px;
     padding: 2px;
 }
+
 
 .text-map_main {
     display: flex;
     position: absolute;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 60px;
     margin-left: 45%;
 
     background-color: rgba(0.9);
@@ -361,6 +426,56 @@ main {
 .map-text {
     color: #fff;
     font-size: 1.9em;
+}
+
+.block_gray {
+    background-color: #1A1A1A;
+}
+
+.text-photo_2 {
+    display: flex;
+    justify-content: center;
+    background-color: #1A1A1A;
+    /* margin-bottom: 10px; */
+}
+
+.text-color_2 {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    margin-top: 70px;
+
+    background-color: #1A1A1A;
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    z-index: 1000;
+}
+
+.button-rgutis_5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.button-color_5 {
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+
+    background-color: #1A1A1A;
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.button-color_5:hover {
+    transform: translateY(-8px);
+}
+
+.button-rgutis-link_5 {
+    text-decoration: none;
+    color: #fff;
 }
 /* КАРТА С ПОЛОСКОЙ */
 

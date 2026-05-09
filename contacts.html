@@ -10,34 +10,38 @@
 </head>
 <body>
     
-    <header class="main-menu">
-        <div class="header-content">
-            <div class="nav-container">
-                <nav class="nav-left">
-                    <a href="rgutis.html">РГУТИС</a>
-                    <a href="teachers.html">Преподаватели</a>
-                    <a href="documents.html">Подать документы</a>
-                </nav>
-            </div>
-            <a href="index.html"><img src="photo/logo.png" alt="Логотип компании"></a>
-            <div class="nav-container">
-                <nav class="nav-right">
-                    <a href="index.html">Главная</a>
-                    <a href="contacts.html">Контакты</a>
-                    <a href="login.html">Личный кабинет</a>
-                </nav>
-            </div>
+    <section class="main-menu-nice">
+        <header class="main-menu">
+            <div class="header-content">
+                <div class="nav-container">
+                    <nav class="nav-left">
+                        <a href="rgutis.html">РГУТИС</a>
+                        <a href="professi.html">Профессии</a>
+                        <a href="documents.html">Подать документы</a>
+                    </nav>
+                </div>
 
-            <!-- ДОДЕЛАТЬ ВХОД | РЕГИСТРАЦИЯ И СМЕНИТЬ ВЕЗДЕ ШАПКИ!!!!! -->
-            <div class="login-mainheader">
-                <div class="login-header">
-                    <a class="login-header_1" href="login.html">Вход</a>
-                    <a href="register.html">Регистрация</a>
+                    <a href="index.html"><img src="photo/logo.png" alt="Логотип компании"></a>
+
+                <div class="nav-container">
+                    <nav class="nav-right">
+                        <a href="index.html">Главная</a>
+                        <a href="contacts.html">Контакты</a>
+                        <a href="login.html">Личный кабинет</a>
+                    </nav>
+                </div>
+
+                <!-- ДОДЕЛАТЬ ВХОД | РЕГИСТРАЦИЯ И СМЕНИТЬ ВЕЗДЕ ШАПКИ!!!!! -->
+                <div class="login-mainheader">
+                    <div class="login-header">
+                        <a class="login-header_1" href="login.html">Вход</a>
+                        <a href="register.html">Регистрация</a>
+                    </div>
                 </div>
             </div>
 
-        </div>
-    </header>
+        </header>   
+    </section>
 
     <main>
 
@@ -51,19 +55,34 @@
 
                     <section  class="contacts">
                         <div class="contacts-item">
-                            <div class="contacts-item1"><h2>Общий отдел</h2><a href="tel:+74959408300" class="phone-link">+7 (495) 940 83 00</a></div>
+                            <div class="contacts-item1"><h2>Общий отдел</h2><a href="tel:+74959408300" class="phone-link">+7 (495) 940-83-00</a></div>
                             <div class="contacts-item2"><h2>Электронная почта</h2><a class="hr" href="mailto:info@rguts.ru">info@rguts.ru</a><a class="hr" href="mailto:obrashenia@rguts.ru">obrashenia@rguts.ru</a></div>
                             <div class="contacts-item3"><h2>Режим работы университета</h2><p>пн-чт: с 09:00 до 18:00;</p><p>пт: с 09:00 до 16:45;</p>
                         </div>
                     </section>
 
-                    <div class="contact-adress">
-                        <h1>Адрес Университета</h1>
-                        <a href="https://yandex.ru/maps/-/CPWqATLl" target="_blank" class="map-link">
-                            141221, Московская обл., Городской округ Пушкинский, пгт. Черкизово, ул. Главная, 99
-                        </a>
+                    <div class="block-adress-icons">
+                        <div class="block-adres">
+                            <div class="contact-adress">
+                                <div>
+                                    <h1>Адрес Университета</h1>
+                                    <a href="https://yandex.ru/maps/-/CPWqATLl" target="_blank" class="map-link">
+                                        141221, Московская обл., Городской округ Пушкинский, пгт. Черкизово, ул. Главная, 99
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="block-icons">
+                            <div class="icon-text">
+                                <h1>Мы есть здесь</h1>
+                            </div>
+                            <div class="social-icons">
+                                <a href="https://t.me/krgutis"><img class="icon" src="photo\icons8-телеграм.svg" alt="Иконка Telegram"></a>
+                                <a href="https://max.ru/id5038005448_biz"><img class="icon" src="photo\max-messenger-sign-logo.svg" alt="Иконка Max"></a>
+                                <a href="https://vk.com/rguts"><img class="icon" src="photo\icons8-vk.svg" alt="Иконка Vk"></a>
+                            </div>
+                        </div>
                     </div>
-
                 <form onsubmit="alert('Спасибо! Заявка отправлена.'); return true;" class="text-obrat">
 
                     <div class="text-obrat2">
@@ -71,7 +90,7 @@
                         <h3>Мы всегда рады ответить на ваши вопросы</h3>
                     </div>
 
-                    <input class="big-input" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="big-input" type="text" name="name" placeholder="Ваше ФИО" required>
                     <input class="big-input" type="tel" id="phone" value="+7" onfocus="if(this.value==='') this.value='+7';" />
                     <textarea class="big-input" name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
                     <button type="submit">Отправить</button>
@@ -79,48 +98,44 @@
                     <script src="JS/form-contact.js"></script>
 
                 </form>
-
-                <div class="social-icons">
-                    <a href="https://t.me/krgutis"><img class="icon" src="photo\icons8-телеграм.svg" alt="Иконка Telegram"></a>
-                    <a href="https://max.ru/id5038005448_biz"><img class="icon" src="photo\max-messenger-sign-logo.svg" alt="Иконка Max"></a>
-                    <a href="https://vk.com/rguts"><img class="icon" src="photo\icons8-vk.svg" alt="Иконка Vk"></a>
-
-                    <!-- <a href="photo\icons8-телеграм.svg" class="icon telegram" title="Telegram">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a>
-                    <a href="#" class="icon max" title="Max">
-                        <i class="fas fa-comment-dots"></i> Заглушка для Max, т.к. прямого шрифта нет
-                    </a>
-                    <a href="#" class="icon vk" title="VK">
-                        <i class="fab fa-vk"></i>
-                    </a> -->
+                <div class="block-line">
+                    <div class="line-contacts"></div>
                 </div>
-                
             </div>
 
         </section>
 
     </main>
 
-    <section class="map">
-        <div class="text-map_main">
-            <div class="map-text"><h1>Карта</h1></div>
-        </div>
-
-        <div>
-            <div class="line"></div>
-            <div class="theme_dark_map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae5806ff17c8ab5a73880662052ef44f9d229fdda9adc17c1b7b6ce9eff30858b&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=truemyMap.behaviors.disable('scrollZoom');"></script>
+    <section>
+        <div class="text-photo_2">
+                <div class="button-rgutis_5">
+                    <button class="button-color_5">
+                        <a class="button-rgutis-link_5" href="contacts.html">
+                            <h1>Наше местоположение</h1>
+                        </a>
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
 
+            <div class="block_gray">
+                <section class="map">
+                    <div>
+                        <div class="block-line_2">
+                            <div class="line"></div>
+                        </div>
+                        <div class="theme_dark_map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae5806ff17c8ab5a73880662052ef44f9d229fdda9adc17c1b7b6ce9eff30858b&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=truemyMap.behaviors.disable('scrollZoom');"></script>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
         <p>© 2026 РГУТИС. Все права защищены.</p>
     </footer>
 
-<!-- <a id="umnico-widget-landing" href="https://umnico.com" target="_blank" rel="noopener" data-config="{&quot;urls&quot;:{&quot;vk&quot;:&quot;vk.com/rguts&quot;,&quot;max&quot;:&quot;max.ru/id5038005448_biz&quot;,&quot;telegram&quot;:&quot;t.me/krgutis&quot;},&quot;hideLogo&quot;:false}">Umnico</a> <script type="text/javascript"> window.umnicoWidgetLandingConfig = {"urls":{"vk":"vk.com/rguts","max":"max.ru/id5038005448_biz","telegram":"t.me/krgutis"},"hideLogo":false}; window.__UMNICO_WIDGET_LANDING_LOAD_NOW__ = true; var landingAnchor = document.getElementById('umnico-widget-landing'); if (landingAnchor && landingAnchor.tagName && landingAnchor.tagName.toLowerCase() === 'a') { var preventAnchorNavigation = function(event) { event.preventDefault(); }; landingAnchor.__umnicoWidgetInlineHandler = preventAnchorNavigation; landingAnchor.addEventListener('click', preventAnchorNavigation); } var x = document.createElement('script'); x.src = 'https://umnico.com/assets/widget-landing-loader.js'; x.type = 'text/javascript'; x.charset = 'UTF-8'; x.async = true; document.body.appendChild(x); </script> -->
 </body>
 </html>

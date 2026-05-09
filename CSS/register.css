@@ -27,8 +27,12 @@ body {
 
 
 /* Фиксированная шапка */
+.main-menu-nice {
+    display: flex;
+}
+
 .main-menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

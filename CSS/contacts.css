@@ -27,8 +27,12 @@ body {
 
 
 /* Фиксированная шапка */
+.main-menu-nice {
+    display: flex;
+}
+
 .main-menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -229,10 +233,15 @@ main {
     display: flex;
     flex-direction: column;
 
+    /* ТЕМНАЯ ВЕРСИЯ ФОРМЫ */
+    /* background-color: #1A1A1A;
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9); */
+    /* ТЕМНАЯ ВЕРСИЯ ФОРМЫ */
+
     /* ГРАДИЕНТ */
     background-image: radial-gradient( #00c6ff,  #0072ff, #004e92);
     box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
-}
+} 
 
 .text-obrat2 {
     text-align: center;
@@ -315,14 +324,26 @@ main {
     padding: 25px;
 }
 
+.block-adress-icons {
+    display: flex;
+}
+
+.block-adres {
+    display: flex;
+    width: 50%;
+}
+
 .contact-adress {
     display: flex;
     text-align: center;
-    margin: 60px 800px;
+    margin: 60px 560px;
     flex-direction: column;
 
-    width: 800px;
-    height: 140px;
+    /* width: 600px;
+    height: 140px; */
+
+    flex-basis: 600px;
+    flex-shrink: 0;
 
     color: #fff;
     background-color: rgba(0.9);
@@ -331,6 +352,60 @@ main {
     padding: 15px;
 }
 
+/* ИКОНКИ */
+.icon-text {
+    display: flex;
+}
+
+
+.block-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 55px;
+    margin-left: 400px;
+    gap: 20px;
+
+    flex-basis: 400px;
+    flex-shrink: 0;
+
+    color: #fff;
+    background-color: rgba(0.9);
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /* margin-left: 57%; */
+    /* margin-top: 20px; */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.3s ease; /* Плавная анимация */
+    /* box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9); */
+}
+
+/* Эффект наведения (hover) */
+.icon:hover {
+    transform: scale(1.1); /* Увеличение */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.6); 
+}
+/* ИКОНКИ */
 
 .contacts-item2 p,
 .contacts-item3 p,
@@ -409,7 +484,8 @@ a[href^="mailto:"]:hover {
     border-radius: 10px;            /* Скругление углов */
     transition: all 0.3s ease;     /* Плавное изменение при наведении */
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 8px;
+    width: 80%;
 }
 
 .map-link:hover {
@@ -418,70 +494,78 @@ a[href^="mailto:"]:hover {
     text-decoration: none;
 }
 
-
-
-.social-icons {
-    display: flex;
-    gap: 50px;
-    /* justify-content: center; */
-    margin-left: 57%;
-    /* margin-top: 20px; */
-}
-
-.icon {
+.block-line {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    transition: all 0.3s ease; /* Плавная анимация */
-    /* box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9); */
+    flex-basis: 100%;
 }
 
-/* Эффект наведения (hover) */
-.icon:hover {
-    transform: scale(1.1); /* Увеличение */
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
-    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.6); 
+.line-contacts {
+    display: flex;
+    width: 100%;
+    height: 6px; /* Толщина центральной части */
+    background: linear-gradient(#00c6ff, #004e92, transparent 70%);
+    border: none;
+    /* margin-bottom: 70px; */
+    /* margin-left: 18%; */
+    margin-top: 100px;
+    padding: 2px;
 }
 
 
 /* КАРТА С ПОЛОСКОЙ */
+.map {
+    /* margin-top: 150px; */
+    background-color: #1A1A1A;
+}
+
 .theme_dark_map {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.8) contrast(1.2);
 }
 
-.map {
-    margin-top: 150px;
-    background-color: #1A1A1A;
+.block-line_2 {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
 }
 
 .line {
     display: flex;
-    width: 70%;
-    height: 2px; /* Толщина центральной части */
-    background: linear-gradient(
-    to right,
-    transparent 0%,
-    #00c6ff 50%, 
-    #004e92 80%, 
-    transparent 100%);
+    width: 100%;
+    height: 6px; /* Толщина центральной части */
+    background: linear-gradient(#00c6ff, #004e92, transparent 70%);
     border: none;
     /* margin-bottom: 70px; */
-    margin-left: 18%;
-    margin-top: 220px;
+    /* margin-left: 18%; */
+    margin-top: 100px;
+    /* padding: 2px; */
+}
+
+.block-line {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: #1A1A1A;
+}
+
+.line-contacts {
+    display: flex;
+    width: 100%;
+    height: 6px; /* Толщина центральной части */
+    background: linear-gradient(#00c6ff, #004e92, transparent 70%);
+    border: none;
+    /* margin-bottom: 70px; */
+    /* margin-left: 18%; */
+    margin-top: 100px;
     padding: 2px;
 }
+
 
 .text-map_main {
     display: flex;
     position: absolute;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 60px;
     margin-left: 45%;
 
     background-color: rgba(0.9);
@@ -493,6 +577,56 @@ a[href^="mailto:"]:hover {
 .map-text {
     color: #fff;
     font-size: 1.9em;
+}
+
+.block_gray {
+    background-color: #1A1A1A;
+}
+
+.text-photo_2 {
+    display: flex;
+    justify-content: center;
+    background-color: #1A1A1A;
+    /* margin-bottom: 10px; */
+}
+
+.text-color_2 {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    margin-top: 70px;
+
+    background-color: #1A1A1A;
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    z-index: 1000;
+}
+
+.button-rgutis_5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.button-color_5 {
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+
+    background-color: #1A1A1A;
+    box-shadow: 5px 5px 15px rgba(119, 119, 119, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.button-color_5:hover {
+    transform: translateY(-8px);
+}
+
+.button-rgutis-link_5 {
+    text-decoration: none;
+    color: #fff;
 }
 /* КАРТА С ПОЛОСКОЙ */
 
