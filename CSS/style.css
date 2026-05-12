@@ -339,26 +339,160 @@ main {
 /* ---- ДРУГИЕ СЕКЦИИ ---- */
 .content-section {
     background-color: #1A1A1A; /* Более темный фон для других секций */
-    padding: 120px 20px; /* Большой отступ сверху и снизу */
-    text-align: center;
+    padding: 50px 20px; /* Большой отступ сверху и снизу */
+    /* text-align: center; */
     position: relative;
     z-index: 1;
 }
 
-.content-section h1 {
-    font-size: clamp(2em, 4vw, 3em);
-    margin-bottom: 30px;
-    color: #fff; /* Цвет заголовков других секций */
-    /* text-shadow: 0 0 10px rgba(0, 188, 212, 0.5); */
+.button-profesi-link {
+    text-decoration: none;
+    color: #fff;
 }
 
-.content-section p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    color: #ccc;
-    opacity: 0.9;
+.button-profesi {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.text_one-block {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ПЕРВАЯ КАРТОЧКА */
+.prof {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(1, 440px);
+    grid-auto-rows: 200px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.program {
+    border-radius: 30px;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.program-text a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.program-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0072ff;
+}
+
+.program-text {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-text a:hover {
+    color: #0072ff;
+}
+
+.program-text:hover {
+    transform: translateY(-5px);
+}
+.img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+
+.program-points {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.program-points span {
+    display: flex;
+    margin-right: 20px;
+}
+
+.program-points-main {
+    margin-top: 20px;
+}
+
+.program-inner {
+    display: block;
+    margin-left: 20px;
+}
+/* ПЕРВАЯ КАРТОЧКА */
+
+
+
+.text-block_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+.button-obrat-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-obrat {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.text-cabinet_1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.text-cabinet_2 {
+    display: flex;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.button-login {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.button-login a {
+    text-decoration: none;
+    color: #fff;
+
+    
+    transition: transform 0.4s ease-out, color 0.4s ease-out;
+    background-image: radial-gradient(circle, #2196f3, #0d47a1);
+    border-radius: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+
+.button-login a:hover {
+    transform: translateY(-3px);
 }
 
 
@@ -405,7 +539,7 @@ main {
     border: none;
     /* margin-bottom: 70px; */
     /* margin-left: 18%; */
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 2px;
 }
 

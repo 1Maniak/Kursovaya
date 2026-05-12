@@ -253,22 +253,38 @@ main {
     height: 100%;
 }
 
+.program-text a {
+    text-decoration: none;
+    color: black;
+
+}
+
 .program-link {
     margin-top: 10px;
     margin-bottom: 10px;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.program-link a {
-    margin-bottom: 10px;
-    text-decoration: none;
     color: #0072ff;
 }
 
-.program-link:hover {
+.program-text {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-text a:hover {
+    color: #0072ff;
+}
+
+.program-text:hover {
     transform: translateY(-5px);
 }
+
+/* .program-link a {
+    margin-bottom: 10px;
+    text-decoration: none;
+} */
+
+/* .program-link:hover {
+    transform: translateY(-5px);
+} */
 
 .img {
     border-top-left-radius: 30px;
